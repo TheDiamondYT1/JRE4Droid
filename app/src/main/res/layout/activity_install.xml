@@ -41,7 +41,14 @@
                 android:layout_width="wrap_content"
                 android:id="@+id/radio_system"
                 android:text="/system"
-                android:layout_weight="1.0"/>
+                android:layout_weight="1.0" />
+			
+			<RadioButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/radio_custom"
+                android:text="Custom"
+                android:layout_weight="1.0" />
         </RadioGroup>
     </LinearLayout>
 

@@ -2,6 +2,11 @@
 <resources>
     <style name="AppTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
 		<item name="colorAccent">#FF0000</item>
+		<item name="colorPrimary">#273037</item>
+	</style>
+	
+	<style name="FilePickerTheme" parent="@style/NNF_BaseTheme">
+		<item name="colorPrimary">#273037</item>
 	</style>
 	
 	<style name="TitleText">

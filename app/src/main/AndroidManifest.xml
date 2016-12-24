@@ -21,8 +21,13 @@
             </intent-filter>
         </activity>
 		<activity
-			android:name=".InstallActivity"
+			android:name=".activities.InstallActivity"
 			android:label="@string/install_title">
+		</activity>
+		<activity
+			android:name=".activities.FileChooserActivity"
+			android:label="Choose Java zip"
+			android:theme="@style/FilePickerTheme">
 		</activity>
     </application>
 </manifest>

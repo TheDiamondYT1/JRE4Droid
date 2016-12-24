@@ -21,7 +21,7 @@ public class DownloadTask extends AsyncTask<String, Integer, String> {
     @Override
     protected void onPreExecute() {
         super.onPreExecute();
-        dialog = new ProgressDialog(Utils.getContext());
+        dialog = new ProgressDialog(InstallActivity.instance);
         dialog.setMessage("Downloading Java...");
         dialog.setIndeterminate(false);
 		dialog.setProgressPercentFormat(null);
