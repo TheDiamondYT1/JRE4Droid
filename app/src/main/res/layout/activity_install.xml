@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+	<TextView
+		android:id="@+id/configure_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:padding="40dp"
+        android:text="@string/install_configure"
+        android:layout_marginTop="17dp" />
+
+	<TextView
+        style="@style/TitleText"
+        android:id="@+id/install_type_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_below="@+id/configure_textView"
+        android:paddingLeft="13dp"
+        android:text="@string/install_type"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/install_type_title"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:weightSum="2">
+
+            <RadioButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/radio_system"
+                android:text="/system"
+                android:layout_weight="1.0"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/install_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/install"
+        android:padding="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true" />
+</RelativeLayout>
